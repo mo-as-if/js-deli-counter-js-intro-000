@@ -20,7 +20,7 @@ function currentLine(katzDeliLine) {
     for (var i = 0; i < katzDeliLine.length; i++) {  //increments index
       lineup += (i + 1) + ". " + katzDeliLine[i] + ", "; // 1. Bill, 2. Jane,
     }
-    lineup = lineup.slice(0, -2);
+    lineup = lineup.slice(0, -2); // slice method returns selected elements in an array as a new array object.
     return `The line is currently: ${lineup}`;
   } else {
     return "The line is currently empty."
