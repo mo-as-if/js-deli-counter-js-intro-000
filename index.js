@@ -2,7 +2,7 @@ var katzDeliLine = []; // empty array to be filled
 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name); // pushes new name to end of array.
-  var index = katzDeliLine[i];
+  var index = katzDeliLine[index];
   return `Welcome, ${name}. You are number ${index + 1} in line.`
 }
 
