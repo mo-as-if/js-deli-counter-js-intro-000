@@ -8,8 +8,8 @@ function takeANumber(katzDeliLine, name){
 
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0) {
-    return `Currently serving ${katzDeliLine.shift()}.` // shift() removes first element of array
-  } else {
+    return `Currently serving ${katzDeliLine.shift()}.` // shift() removes first element of array and returns that element
+  } else if (katzDeliLine === 0){
     return "There is nobody waiting to be served!" // aka katzDeliLine.length <= 0
   }
 }
