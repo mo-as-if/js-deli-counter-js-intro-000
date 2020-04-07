@@ -22,7 +22,7 @@ function currentLine(katzDeliLine) {
     }
     lineup = lineup.slice(0, -2); // slice method returns selected elements in an array as a new array object.
     return `The line is currently: ${lineup}`;
-  } else {
+  } else if (katzDeliLine.length === 0){
     return "The line is currently empty."
   }
 }
