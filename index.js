@@ -14,7 +14,7 @@ function nowServing(katzDeliLine){
   }
 }
 
-function currentLine() {
+function currentLine(katzDeliLine) {
   if (katzDeliLine.length > 0) {
     var lineup = [] // empty string to build new array.
     for (var i = 0; i < katzDeliLine.length; i++) {  //loops and increments index staring from 0
